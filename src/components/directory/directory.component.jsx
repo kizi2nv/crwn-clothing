@@ -14,33 +14,33 @@ constructor() {
               title: 'hats',
               imageUrl: './images/hats.png',
               id: 1,
-              linkUrl: 'shop/hats'
+              linkUrl: 'hats'
             },
             {
               title: 'jackets',
               imageUrl: './images/jackets.png',
               id: 2,
-              linkUrl: 'shop/jackets'
+              linkUrl: ''
             },
             {
               title: 'sneakers',
               imageUrl: './images/sneakers.png',
               id: 3,
-              linkUrl: 'shop/sneakers'
+              linkUrl: ''
             },
             {
               title: 'womens',
               imageUrl: './images/womens.png',
               size: 'large',
               id: 4,
-              linkUrl: 'shop/womens'
+              linkUrl: ''
             },
             {
               title: 'mens',
               imageUrl: './images/men.png',
               size: 'large',
               id: 5,
-              linkUrl: 'shop/mens'
+              linkUrl: ''
             }
           ]
           
@@ -51,8 +51,8 @@ render(){
     return(
         <div className='directory-menu'>
           {
-              this.state.sections.map( ({title, imageUrl, id, size}) =>(
-                  <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+              this.state.sections.map( ({id, ...otherSectionProps}) =>(
+                  <MenuItem key={id} {...otherSectionProps}/>
               ))
           }  
         </div>
