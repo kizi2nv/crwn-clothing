@@ -8,13 +8,15 @@ import {store, persistor} from './redux/store';
 
 import './index.css';
 import App from './App';
+//import { persistStore } from 'redux-persist';
 
 
-ReactDOM.render(
+ReactDOM.render(  
+
   <Provider store={store}>
     <BrowserRouter>
       <PersistGate persistor={persistor}>
-        <App />
+        <App/>
       </PersistGate>
     </BrowserRouter>
   </Provider>,
