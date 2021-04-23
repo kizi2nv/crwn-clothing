@@ -28,6 +28,7 @@ height: 100%;
       width: 50px;
       padding: 0;
   }
+ 
 `;
 
 export const OptionContainer = styled.div`

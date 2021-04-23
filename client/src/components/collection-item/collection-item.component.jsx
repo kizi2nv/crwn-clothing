@@ -25,7 +25,8 @@ const CollectionItem = ({item, addItem}) => {
         <CustomButton style={{
              marginTop: '16em',
   opacity: '0.6',
-  position: 'absolute'
+  position: 'absolute',
+  padding: '0 10px 0',
          }} onClick={() => addItem(item)} inverted> Add to cart</CustomButton>
     </div>
 
