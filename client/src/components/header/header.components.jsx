@@ -33,7 +33,7 @@ import {
             SHOP
         </OptionLink>
 
-        <OptionLink to='/shop'>
+        <OptionLink to='/contact'>
             CONTACT
         </OptionLink>
 

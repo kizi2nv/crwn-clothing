@@ -43,7 +43,7 @@ color: white;
 `
 
 export const CustomButtonContainer = styled.button `
-min-width: 165px;
+min-width: max-content;
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
@@ -59,7 +59,8 @@ min-width: 165px;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  
 
-
+ 
 ${getButtonStyles}
 `;

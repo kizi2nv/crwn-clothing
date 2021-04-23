@@ -63,7 +63,7 @@ const handleChange = event => {
                    
                 <div className='buttons'>
                     <CustomButton type="submit" >Sign In</CustomButton>
-                    <CustomButton type="button" onClick={googleSignInStart} isGoogleSignIn>
+                    <CustomButton  onClick={googleSignInStart} isGoogleSignIn>
                         {' '}
                          sign in With Google
                          {' '}
