@@ -47,5 +47,9 @@ justify-content: flex-end;
 export const OptionLink = styled(Link)`
 padding: 10px 15px;
 cursor: pointer;
+
+@media screen and (max-width: 800px) {
+  font-size: 70%;
+}
 `;
 
